@@ -32,6 +32,7 @@ jobs:
       with:
         token: ${{ secrets.DEPLOY_TOKEN }}
         branch: gh-pages
+        folder: build
         
     - name: deploy
       run: npm i && npm start

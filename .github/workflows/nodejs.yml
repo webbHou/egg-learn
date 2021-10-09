@@ -36,4 +36,4 @@ jobs:
         BUILD_SCRIPT: npm install && npm run build
 
     - name: run object
-      run: npm i && npm start
+      run: npm i && npm run dev

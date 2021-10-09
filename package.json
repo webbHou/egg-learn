@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "remember every day",
   "private": true,
+  "homepage": "https://webbhou.github.io/github-actions-demo",
   "egg": {
     "declarations": true
   },

@@ -6,14 +6,7 @@ name: Node.js CI
 on:
   push:
     branches:
-      - main
       - master
-  pull_request:
-    branches:
-      - main
-      - master
-  schedule:
-    - cron: '0 2 * * *'
 
 jobs:
   build:
@@ -34,13 +27,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install Dependencies
-      run: npm i -g npminstall && npminstall
-
-    - name: Continuous Integration
-      run: npm run ci
-
-    - name: Code Coverage
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+    - name: run object
+      run: npm i && npm start

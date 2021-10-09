@@ -7,7 +7,7 @@ class SendResetMsg extends Subscription {
   static get schedule() {
     return {
       //   cron: '0 0 8 * * *', // 每天8点
-      interval: '20min', // 每20分钟
+      interval: '40s', // 每20分钟
       type: 'all', // 指定所有的 worker 都需要执行
     };
   }

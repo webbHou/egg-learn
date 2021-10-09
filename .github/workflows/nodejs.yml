@@ -27,5 +27,13 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: npm install && npm run build
+
     - name: run object
       run: npm i && npm start

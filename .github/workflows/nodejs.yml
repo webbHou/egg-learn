@@ -28,4 +28,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: run object
-      run: npm i && npm start
+      run: npm i && npm run dev

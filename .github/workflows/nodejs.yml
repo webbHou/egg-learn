@@ -31,7 +31,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@4.1.5
       with:
         branch: gh-pages
-        folder: app
+        folder: /
         
     - name: deploy
       run: npm i && npm run start

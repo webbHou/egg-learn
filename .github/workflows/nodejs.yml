@@ -27,11 +27,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-#     - name: Build and Deploy
-#       uses: JamesIves/github-pages-deploy-action@4.1.5
-#       with:
-#         branch: gh-pages
-#         folder: build
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        branch: gh-pages
+        folder: build
         
-    - name: deploy
-      run: npm i && npm start
+#     - name: deploy
+#       run: npm i && npm start
